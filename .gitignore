@@ -10,3 +10,8 @@ compile_commands.json
 src/config.h
 sdkconfig.*
 dependencies.lock
+# macOS metadata
+.DS_Store
+._*
+**/.DS_Store
+**/._*

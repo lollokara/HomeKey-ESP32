@@ -31,7 +31,7 @@ enum lockStates
   LOCKING
 };
 AsyncWebServer webServer(80);
-PN532_SPI pn532spi(SS, SCK, MISO, MOSI);
+PN532_SPI pn532spi(6, 5, 4, 7);
 PN532 nfc(pn532spi);
 QueueHandle_t gpio_led_handle = nullptr;
 QueueHandle_t neopixel_handle = nullptr;
